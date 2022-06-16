@@ -1054,3 +1054,11 @@ textarea {
     padding-right: 40px;
     margin-top: 30px;
 }
+
+.mw-item-box:focus-within svg{
+    fill: var(--webstudio-color);
+}
+
+.mw-item-box:focus-within {
+    border-color: var(--webstudio-color);
+}
