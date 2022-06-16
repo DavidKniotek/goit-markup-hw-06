@@ -437,6 +437,30 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form name="contact-form">
+          <h3>Zostaw nam swoje dane w formularzu poniżej</h3>
+          <label>
+            <p>Imię</p>
+            <input type="text" name="name" />
+          </label>
+          <label>
+            <p>Telefon</p>
+            <input type="tel" name="phone-number" />
+          </label>
+          <label>
+            <p>Email</p>
+            <input type="email" name="email" />
+          </label>
+          <label>
+            <p>Komentarz</p>
+            <input type="text" name="comment" />
+          </label>
+          <label>
+            <input type="checkbox" name="terms=acceptance" />
+            <p>Oświadczam, iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a>.</p>
+          </label>
+          <button type="button">Wyślij</button>
+        </form>
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-icon">
             <use href="images/icons.svg#icon-close-black"></use>
