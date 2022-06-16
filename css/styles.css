@@ -620,6 +620,10 @@ body {
     margin-right: 10px;
 }
 
+.footer-social-media-item:last-child {
+    margin-right: 78px;
+}
+
 .footer-social-media-link {
     display: flex;
     width: 44px;
