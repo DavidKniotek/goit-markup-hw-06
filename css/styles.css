@@ -990,6 +990,7 @@ textarea {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 .mw-icon {
@@ -998,4 +999,58 @@ textarea {
     bottom: 11px;
     width: 18px;
     height: 18px;
+}
+
+.before-checkbox::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-left: 14px;
+    margin-right: 4px;
+
+}
+
+.last-label-checkbox:checked + .before-checkbox::before {
+    background-color: var(--webstudio-color);
+    border: none;
+    background-image: url(../images/custom-checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.last-mw-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+    margin-right: 14px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.mw-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 30px;
 }

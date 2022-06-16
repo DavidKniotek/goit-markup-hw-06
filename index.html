@@ -465,10 +465,12 @@
             <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" class="mw-item-feedback"></textarea>
           </label>
           <label>
-            <input type="checkbox" name="terms=acceptance" />
-            <p>Oświadczam, iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a>.</p>
+            <input class="last-label-checkbox visually-hidden" type="checkbox" name="terms=acceptance" />
+            <p class="before-checkbox last-mw-item">Oświadczam, iż akceptuję <a href="#" class="link-active"> Regulamin</a> i <a href="#" class="link-active">Politykę Prywatności.</a></p>
           </label>
-          <button type="button">Wyślij</button>
+          <div class="mw-button">
+            <button type="submit" class="button">Wyślij</button>
+          </div>
         </form>
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-icon">
