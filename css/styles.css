@@ -913,7 +913,7 @@ body {
 }
 
 .link-active {
-    color: var(--webstudio-color)
+    color: var(--webstudio-color);
 }
 
 .link::selection {
@@ -1039,6 +1039,9 @@ body {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
 }
 
 textarea {
@@ -1067,6 +1070,9 @@ textarea::placeholder {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
 }
 
 .mw-icon {
@@ -1075,6 +1081,9 @@ textarea::placeholder {
     bottom: 11px;
     width: 18px;
     height: 18px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
 }
 
 .before-checkbox::before {
@@ -1086,7 +1095,10 @@ textarea::placeholder {
     border-radius: 2px;
     margin-left: 14px;
     margin-right: 4px;
-
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
+    cursor: pointer;
 }
 
 .last-label-checkbox:checked + .before-checkbox::before {
@@ -1095,6 +1107,9 @@ textarea::placeholder {
     background-image: url(../images/custom-checkbox.svg);
     background-repeat: no-repeat;
     background-position: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background;
 }
 
 .last-mw-item {
@@ -1133,10 +1148,16 @@ textarea::placeholder {
 
 .mw-item-box:focus-within {
     border-color: var(--webstudio-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
 }
 
 label:focus-within svg {
     fill: var(--webstudio-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
 }
 
 .mw-item-feedback:focus-within {
