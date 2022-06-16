@@ -40,6 +40,13 @@ img {
     padding-bottom: 94px;
 }
 
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    outline: 0;
+}
+
 /* ----------HEADER---------- */
 
 .header .container {
@@ -1055,10 +1062,14 @@ textarea {
     margin-top: 30px;
 }
 
-.mw-item-box:focus-within svg{
+.mw-item-box:focus-within {
+    border-color: var(--webstudio-color);
+}
+
+label:focus-within svg {
     fill: var(--webstudio-color);
 }
 
-.mw-item-box:focus-within {
+.mw-item-feedback:focus-within {
     border-color: var(--webstudio-color);
 }
