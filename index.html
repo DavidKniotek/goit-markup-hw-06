@@ -449,7 +449,9 @@
         <div>
           <h2 class="footer-social-media-header">ZAPISZ SIĘ DO NEWSLETTERA</h2>
           <form name="newsletter-form">
-            <input type="email" name="email" placeholder="E-mail" />
+            <label class="newsletter-label">
+            <input type="email" name="email" class="newsletter-form-email" placeholder="E-mail" />
+            </label>
             <button type="submit">Zapisz się</button>
           </form>         
         </div>
@@ -459,28 +461,28 @@
       <div class="modal">
         <form name="contact-form">
           <h3 class="mw-header">Zostaw swoje dane w formularzu poniżej</h3>
-          <label>
+          <label class="modal-form">
             <p class="mw-item">Imię</p>
             <input class="mw-item-box" type="text" name="name" />
             <svg class="mw-icon">
               <use href="images/icons.svg#icon-mw-person"></use>
             </svg>
           </label>
-          <label>
+          <label class="modal-form">
             <p class="mw-item">Telefon</p>
             <input class="mw-item-box" type="tel" name="phone-number" />
             <svg class="mw-icon">
               <use href="images/icons.svg#icon-mw-phone"></use>
             </svg>
           </label>
-          <label>
+          <label class="modal-form">
             <p class="mw-item">Email</p>
             <input class="mw-item-box" type="email" name="email" />
             <svg class="mw-icon">
               <use href="images/icons.svg#icon-mw-email"></use>
             </svg>
           </label>
-          <label>
+          <label class="modal-form">
             <p class="mw-item">Komentarz</p>
             <textarea
               name="feedback"
@@ -489,7 +491,7 @@
               class="mw-item-feedback"
             ></textarea>
           </label>
-          <label>
+          <label class="modal-form">
             <input
               class="last-label-checkbox visually-hidden"
               type="checkbox"
