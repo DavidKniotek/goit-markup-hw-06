@@ -40,13 +40,6 @@ img {
     padding-bottom: 94px;
 }
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-    outline: 0;
-}
-
 /* ----------HEADER---------- */
 
 .header .container {
@@ -979,6 +972,11 @@ label {
 
 textarea {
     resize: none;
+    outline: none;
+}
+
+input {
+    outline: none;
 }
 
 ::placeholder {
